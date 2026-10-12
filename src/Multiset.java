@@ -1,3 +1,3 @@
-public class Multieset{
+public class Multiset{
 
 }
