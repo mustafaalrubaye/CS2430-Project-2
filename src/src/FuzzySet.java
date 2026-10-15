@@ -43,6 +43,23 @@ public class FuzzySet implements SetInterface {
 	 }
 	}
 
+	public FuzzySet Complement() {
+		FuzzySet fsc = new FuzzySet(n);
+		
+		return fsc;
+	}
+	
+	public FuzzySet union(FuzzySet z) {
+		FuzzySet fsu = new FuzzySet(n);
+		
+		return fsu;
+	}
+	
+	public FuzzySet inter(FuzzySet z) {
+		FuzzySet fsi = new FuzzySet(n);
+		
+		return fsi;
+	}
+	
 	
 }
-	
