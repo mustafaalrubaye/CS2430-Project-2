@@ -14,9 +14,9 @@ public class Multiset implements SetInterface{
 		add(x, 1);
 		
 	}
-	public void add(int num, int y) {
-		if( num >= 0 && num > n && y > 0)
-			a[num] = a[num] + y;
+	public void add(int num, int ele) {
+		if( num >= 0 && num > n && ele > 0)
+			a[num] = a[num] + ele;
 	
 	}
 	public void take(int num) {
