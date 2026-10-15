@@ -47,5 +47,31 @@ public class Multiset implements SetInterface{
 		return false;
 		}
 	}
-
+	
+	public Multiset union(Multiset y) {
+		Multiset msu = new Multiset(n);
+			
+			
+			return msu;
+		}
+	public Multiset inter(Multiset y) {
+		Multiset msi = new Multiset(n);
+			
+			
+			return msi;
+	}
+	public Multiset diff(Multiset y) {
+		Multiset msd = new Multiset(n);
+			
+			
+			return msd;
+	}
+	public Multiset sum(Multiset y) {
+		Multiset msum = new Multiset(n);
+			
+			
+			return msum;
+	}
 }
+
+
