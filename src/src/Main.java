@@ -48,6 +48,21 @@ public class Main {
        	System.out.println("M1 ∩ M2 " + ma.inter(mb));
     	System.out.println("M1 + M2 " + ma.sum(mb));
     	System.out.println("M1 − M2 " + ma.diff(mb));
+
+
+        System.out.println("\n======fuzzy======");
+    	FuzzySet f = new FuzzySet(size);
+       	FuzzySet g = new FuzzySet(size);
+       	f.add(9, 0.10);
+       	f.add(2, 0.20);
+       	f.add(3, 0.30);
+       	f.add(4, 0.40);
+       	g.add(5, 0.50);
+       	g.add(2, 0.60);
+       	g.add(7, 0.70);
+       	g.add(4, 0.90);
+        System.out.println("First FuzzySet = " + f);
+        System.out.println("second FuzzySet = " + f);
     }
 }
 
