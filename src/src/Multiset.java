@@ -13,7 +13,7 @@ public class Multiset implements SetInterface{
 	
 	
 	/*
-	 * This is for if you want to copy a number then you can use this method
+	 * this is for if you want to copy a number then you can use this method
 	 * to make 1 copy of it
 	 */
 	@Override
@@ -40,8 +40,8 @@ public class Multiset implements SetInterface{
 		}
 	}
 	/*
-	 * checks each number to see if it is out of range return 0
-	 * If not, return the stored num
+	 * checks each number if one is out of range return a 0
+	 * if not return the stored num
 	 */
 		 int get(int num) {
 			if(num < 0 || num >= n) {
@@ -51,7 +51,7 @@ public class Multiset implements SetInterface{
 	}
 		 
 		 /*
-		  * This finds the integer count
+		  * this finds the integer count
 		  * and makes it into a decimal because of the double
 		  */
 
@@ -63,8 +63,8 @@ public class Multiset implements SetInterface{
 
 	}
 	/*
-	 * This looks through and sees if the count is greater than 0
-	 * then it'll return true, and if not, then return false
+	 * this looks through and sees if the count is greater then 0
+	 * then it'll return true and if not then return false
 	 */
 
 	@Override
@@ -87,7 +87,8 @@ public class Multiset implements SetInterface{
 		Multiset msu = new Multiset(n);
 		for(int i = 0; i < n; i++) {// runs through the universe 
 			if(get(i) > y.get(i)) {
-			}else msu.a[i] = get(i);
+				msu.a[i] = get(i);
+			}else msu.a[i] = y.get(i);
 			
 		}
 			return msu;
@@ -101,9 +102,11 @@ public class Multiset implements SetInterface{
 			for(int i = 0; i < n; i++) {
 				if(get(i) < y.get(i)) {
 					msi.a[i] = get(i);
-			}else msi.a[i] = y.get(i);
+			}else {
+				msi.a[i] = y.get(i);
+			}
+			}
 			
-		}
 			return msi;
 	}
 	/*
@@ -116,7 +119,7 @@ public class Multiset implements SetInterface{
 		Multiset msd = new Multiset(n);
 			for (int i = 0; i < n; i++) {
 				int min = get(i) - y.get(i);
-				if(min < 0);
+				if(min < 0)
 					min = 0;
 					msd.a[i] = min;
 			}
@@ -126,7 +129,7 @@ public class Multiset implements SetInterface{
 	
 	/*
 	 * it's the same as the difference
-	 * it just adds and doesn't subtract it also loops through 
+	 * it just adds and doesn't subtract; it also loops through 
 	 * then we add it to a new set
 	 */
 	
@@ -140,7 +143,7 @@ public class Multiset implements SetInterface{
 	}
 	//For printing, this was not my work, and I did look up the inspiration for how to use this
 	public String toString() {
-		String s = "{";
+		String s = "{ ";
 		for(int i = 0; i < n; i++) {
 			if(a[i] > 0) {
 				s = s + i + "x" + a[i] + " ";
@@ -150,6 +153,7 @@ public class Multiset implements SetInterface{
 		return s;
 	}
 }
+
 
 
 
