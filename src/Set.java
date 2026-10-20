@@ -3,7 +3,7 @@
 public class Set implements SetInterface{
 
 	/*
-	 * this is used for remembering the target size
+	 * This is used for remembering the target size
 	 * as well as just to have it remember and store true/false statements 
 	 */
 	boolean[] a;
@@ -14,7 +14,7 @@ public class Set implements SetInterface{
 	}
 	
 	/*
-	 * and implemented method to check is it with in the universe 
+	 * and implemented method to check if it is within the universe 
 	 * if yes then a= true 
 	 * if no then a= false 
 	 */
@@ -83,7 +83,7 @@ public class Set implements SetInterface{
 	 * and count from 0 to whatever the max number(n=10)
 	 */
 	public Set union(Set x) {
-		Set su = new Set(n);// keeping the names similar because i made both fuzz and multi as the first letter of what we were doing so i re named it for (this does't really matter its just for me it doesn't even matter for printing)
+		Set su = new Set(n);
 		for(int i = 0; i < n; i++)
 			if(has(i) || x.has(i))
 				su.add(i);
@@ -91,9 +91,9 @@ public class Set implements SetInterface{
 	}
 	
 	/*
-	 * this only checks if both the arrays have them
+	 * This only checks if both arrays have them
 	 *if it'll make a new set
-	 * if not skip
+	 * if not, skip
 	 */
 	
 	public Set inter(Set x) {
