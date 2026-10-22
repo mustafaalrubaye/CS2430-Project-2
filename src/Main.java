@@ -66,7 +66,7 @@ public class Main {
        	g.add(4, 0.90);
         System.out.println("\nFirst FuzzySet = " + f);
         System.out.println("\nsecond FuzzySet = " + g);
-        System.out.println(" \n1.0 − μA(x)  (Complement or negation) = \n" + f.Complement());
+        System.out.println(" \n1.0 − μA(x)  (Complement or negation) = \n" + f.complement());
         System.out.println(" \nmax(μA(x), μB(x)) (Union) = " + f.union(g));
         System.out.println("\nmin(μA(x), μB(x))  (Intersection) = " + f.inter(g));
     }

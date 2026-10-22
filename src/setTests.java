@@ -453,11 +453,15 @@ class setTests {
 	    FuzzySet ab = new FuzzySet(10);
 
 	    a.add(3, 0.4);
+	    a.add(4, 0.3);
 	    ab.add(3, 0.8);
+	    ab.add(4, 0.7);
+	    
 
 	    FuzzySet result = a.union(ab);
 
 	    assertEquals(0.8, result.counts(3));
+	    assertEquals(0.7, result.counts(4));
 	}
 
 	@Test

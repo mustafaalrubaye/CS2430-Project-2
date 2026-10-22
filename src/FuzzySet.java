@@ -25,7 +25,6 @@ public class FuzzySet implements SetInterface {
 	 */
 	public void add(int num, double ele) {
 		if (ele < 0 || ele > 1) {
-			System.out.println("the degree has to be in between 0.0 and 1.0 only");
 			return;
 		} else if (num >= 0 && num < n) {
 			a[num] = ele;
