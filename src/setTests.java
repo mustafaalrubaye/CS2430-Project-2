@@ -359,10 +359,13 @@ class setTests {
 		FuzzySet a = new FuzzySet(10);
 
 		a.add(3, 0.7);
+		a.add(1, 1.0);
 
 		FuzzySet result = a.complement();
 
 		assertEquals(0.3, result.counts(3), 0.000001);
+		assertEquals(0.0, result.counts(1), 0.000001);
+		assertEquals(1.0, result.counts(9), 0.000001);
 	}
 
 	@Test
