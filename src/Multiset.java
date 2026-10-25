@@ -1,9 +1,17 @@
 /**
- * Creates a set of numbers with number duplicates and counts the number of times
- * an element appears in the set.
+ * @author: Mustafa Alrubaye, Owen Francy, Helen Le.
+ * Course: CS 2430
+ * Term: Fall 2026
+ * Instructor: Jon McGowan
+ * Programming Project 2: Set Operations
  */
 
 
+
+/**
+ * Creates a set of numbers with duplicates and counts the number of times
+ * an element appears in the set.
+ */
 public class Multiset implements SetInterface{
 
 
