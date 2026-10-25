@@ -1,3 +1,12 @@
+/**
+ * @author: Mustafa Alrubaye, Owen Francy, Helen Le.
+ * Course: CS 2430
+ * Term: Fall 2026
+ * Instructor: Jon McGowan
+ * Programming Project 2: Set Operations
+ */
+
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
