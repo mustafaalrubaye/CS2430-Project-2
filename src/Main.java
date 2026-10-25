@@ -1,6 +1,11 @@
 /**
- * 
+ * @author: Mustafa Alrubaye, Owen Francy, Helen Le.
+ * Course: CS 2430
+ * Term: Fall 2026
+ * Instructor: Jon McGowan
+ * Programming Project 2: Set Operations
  */
+
 public class Main {
     public static void main(String[] args) {
         
